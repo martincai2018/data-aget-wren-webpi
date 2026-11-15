@@ -28,3 +28,7 @@ wren-core-py/dist/
 # Local native-run additions (2026-11)
 .venv/
 *.log
+
+# Generated demo database (rebuild via demo-data/build_demo_duckdb.py)
+mcp-server/demo-data/*.duckdb
+mcp-server/demo-data/*.duckdb.wal
