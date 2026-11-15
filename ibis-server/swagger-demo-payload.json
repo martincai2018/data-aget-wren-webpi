@@ -1,0 +1,8 @@
+{
+  "manifestStr": "eyJjYXRhbG9nIjogImRlbW8iLCAic2NoZW1hIjogInRwY2giLCAibW9kZWxzIjogW3sibmFtZSI6ICJPcmRlcnMiLCAidGFibGVSZWZlcmVuY2UiOiB7InRhYmxlIjogIkM6L0FJL3dyZW4tZW5naW5lL2V4YW1wbGUvZHVja2RiLXRwY2gtZXhhbXBsZS9kYXRhL29yZGVycy5wYXJxdWV0In0sICJjb2x1bW5zIjogW3sibmFtZSI6ICJvcmRlcmtleSIsICJleHByZXNzaW9uIjogIm9fb3JkZXJrZXkiLCAidHlwZSI6ICJpbnRlZ2VyIn0sIHsibmFtZSI6ICJjdXN0a2V5IiwgImV4cHJlc3Npb24iOiAib19jdXN0a2V5IiwgInR5cGUiOiAiaW50ZWdlciJ9LCB7Im5hbWUiOiAib3JkZXJzdGF0dXMiLCAiZXhwcmVzc2lvbiI6ICJvX29yZGVyc3RhdHVzIiwgInR5cGUiOiAidmFyY2hhciJ9LCB7Im5hbWUiOiAidG90YWxwcmljZSIsICJleHByZXNzaW9uIjogIm9fdG90YWxwcmljZSIsICJ0eXBlIjogImZsb2F0In0sIHsibmFtZSI6ICJvcmRlcmRhdGUiLCAiZXhwcmVzc2lvbiI6ICJvX29yZGVyZGF0ZSIsICJ0eXBlIjogImRhdGUifV0sICJwcmltYXJ5S2V5IjogIm9yZGVya2V5In1dfQ==",
+  "sql": "SELECT orderstatus, COUNT(*) AS cnt, ROUND(SUM(totalprice),2) AS gmv FROM \"Orders\" GROUP BY orderstatus ORDER BY orderstatus",
+  "connectionInfo": {
+    "url": "C:/AI/wren-engine/example/duckdb-tpch-example/data",
+    "format": "parquet"
+  }
+}

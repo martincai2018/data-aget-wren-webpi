@@ -24,3 +24,7 @@ venv/
 **/*.so
 wren-core-py/dist/
 .claude/worktrees/
+
+# Local native-run additions (2026-11)
+.venv/
+*.log
